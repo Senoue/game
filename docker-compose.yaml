@@ -1,0 +1,8 @@
+go-game:
+  build: .
+  container_name: go-game
+  privileged: true
+  ports:
+    - '8888:8080'
+  volumes:
+    - "$PWD:/data"
